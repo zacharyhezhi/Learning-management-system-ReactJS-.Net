@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7359ffd249114b9d92482a3b2aaef1a9" Name="Diagram1">
+        <EntityTypeShape EntityType="LMSModel.Course" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LMSModel.Student" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LMSModel.User" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LMSModel.StudentCourse" Width="1.5" PointX="6" PointY="6.5" />
+        <AssociationConnector Association="LMSModel.FK_StudentCourse_Course" />
+        <AssociationConnector Association="LMSModel.FK_StudentCourse_Student" />
+        <EntityTypeShape EntityType="LMSModel.Lecturer" Width="1.5" PointX="0.75" PointY="9" />
+        <EntityTypeShape EntityType="LMSModel.LecturerCourse" Width="1.5" PointX="3" PointY="1.125" />
+        <AssociationConnector Association="LMSModel.FK_LectureCourse_Course" />
+        <AssociationConnector Association="LMSModel.FK_LectureCourse_Lecture" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
